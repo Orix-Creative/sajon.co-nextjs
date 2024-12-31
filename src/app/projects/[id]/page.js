@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import projects from "../../../data/projectData.json";
 import Link from "next/link";
+export const runtime = "edge";
 
 const Projects = ({ params }) => {
   const { id } = params;
@@ -19,21 +20,26 @@ const Projects = ({ params }) => {
   const currentProject = project[0];
 
   return (
-    <div className="container pb-20 ">
+    <div className="container pb-20">
       <div className="sl:max-w-[402px] max-w-[326px] mx-auto">
-        <Link href={'/'} className="bg-[#F5F5F5] rounded-full text-black  py-2 px-4 inline-block font-inter text-lg leading-6 font-medium -tracking-0.4 cursor-pointer my-6">
+        <Link
+          href={"/"}
+          className="bg-[#F5F5F5] rounded-full text-black  py-2 px-4 inline-block font-inter text-base leading-6 font-medium -tracking-0.4 cursor-pointer my-8"
+        >
           <p>Go back</p>
         </Link>
         <div className="size-[50px] rounded-md bg-gray-200"> </div>
         <p className="font-inter font-medium text-black text-lg leading-22 -tracking-0.4 mt-8">
           {currentProject.project_name}
         </p>
-        <p className="font-inter font-medium text-black text-lg leading-22 -tracking-0.4 mt-4">
+        <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-4">
           {currentProject.project_details}
         </p>
       </div>
-      {currentProject.project_images.map((item) => (
-        <div className="w-full h-[280px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D] mt-8"></div>
+      {currentProject.project_images.map((item, idx) => (
+        <div key={idx} className="flex flex-col sl:gap-8 gap-3  mt-8">
+          <div className="w-full h-[280px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]"></div>
+        </div>
       ))}
     </div>
   );
