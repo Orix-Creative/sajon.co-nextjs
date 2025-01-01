@@ -1,53 +1,62 @@
 [
-    {
-      "id": 1,
-      "project_name": "Kenko",
-      "project_icon": "https://example.com/icons/kenko-icon.png",
-      "project_details": "Kenko is a health tracking app designed to help users monitor their daily activities, meals, sleep, and overall health trends. The app provides detailed insights into users' health progress and suggests improvements for better wellness.",
-      "project_images": [
-        "https://example.com/images/kenko-1.jpg",
-        "https://example.com/images/kenko-2.jpg",
-        "https://example.com/images/kenko-3.jpg",
-        "https://example.com/images/kenko-4.jpg",
-        "https://example.com/images/kenko-5.jpg"
-      ]
-    },
-    {
-      "id": 2,
-      "project_name": "Kosta",
-      "project_icon": "https://example.com/icons/urban-explorer-icon.png",
-      "project_details": "Urban Explorer is an interactive app for city dwellers looking to discover hidden gems in their local area. It offers detailed reviews, ratings, and GPS-based maps to help people explore new places in their cities.",
-      "project_images": [
-        "https://example.com/images/urban-1.jpg",
-        "https://example.com/images/urban-2.jpg",
-        "https://example.com/images/urban-3.jpg",
-        "https://example.com/images/urban-4.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "project_name": "Nexus",
-      "project_icon": "https://example.com/icons/eco-move-icon.png",
-      "project_details": "EcoMove is a sustainable transport app that provides users with eco-friendly transportation options like bicycles, electric scooters, and carpooling. It aims to reduce carbon footprints by encouraging greener alternatives to cars.",
-      "project_images": [
-        "https://example.com/images/eco-1.jpg",
-        "https://example.com/images/eco-2.jpg",
-        "https://example.com/images/eco-3.jpg",
-        "https://example.com/images/eco-4.jpg"
-      ]
-    },
-    {
-      "id": 4,
-      "project_name": "Dialin",
-      "project_icon": "https://example.com/icons/cookmaster-icon.png",
-      "project_details": "CookMaster is a recipe-sharing platform that helps users find and share cooking recipes, track ingredients, and create grocery shopping lists. The app offers personalized meal suggestions based on dietary preferences and available ingredients.",
-      "project_images": [
-        "https://example.com/images/cookmaster-1.jpg",
-        "https://example.com/images/cookmaster-2.jpg",
-        "https://example.com/images/cookmaster-3.jpg",
-        "https://example.com/images/cookmaster-4.jpg",
-        "https://example.com/images/cookmaster-5.jpg"
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "project_name": "Kenko",
+    "project_type": "Health Care App",
+    "project_thumb": "/assets/Kenko.webp",
+    "project_icon": "/assets/kenko-icon.svg",
+    "project_details": "Kenko Healthcare App helps users easily track their health and get valuable insights. As health tech develops, apps must be simple and easy to use. We created a simple design that allows users to track heart health, body composition, blood oxygen, and temperature. We also keep medical reports easily accessible for convenience.",
+    "project_images": [
+      "/assets/Kenko-1.webp",
+      "/assets/Kenko-2.webp",
+      "/assets/Kenko-3.webp",
+      "/assets/Kenko-4.webp",
+      "/assets/Kenko-5.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "project_name": "Cesta",
+    "project_type": "Travel App",
+    "project_thumb": "/assets/Cesta.webp",
+    "project_icon": "/assets/cesta-icon.svg",
+    "project_details": "The Cesta App is designed to make trip planning easy and stress-free. As travel tech advances, it's essential for platforms to stay simple and user-friendly. We created a specific design that allows users to book flights, reserve hotels, and rent cars all in one place.",
+    "project_images": [
+      "/assets/Cesta-1.webp",
+      "/assets/Cesta-2.webp",
+      "/assets/Cesta-3.webp",
+      "/assets/Cesta-4.webp",
+      "/assets/Cesta-5.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "project_name": "Nexus",
+    "project_type": "Learning App",
+    "project_thumb": "/assets/Nexus.webp",
+    "project_icon": "/assets/nexus-icon.svg",
+    "project_details": "The Nexus e-learning app offers flexible, interactive learning anytime, anywhere. As e-learning grows, platforms need to be engaging and easy to use. We designed a simple app for users to follow learning paths, take courses, join live sessions, and earn certificates.",
+    "project_images": [
+      "/assets/Nesus-1.webp",
+      "/assets/Nesus-2.webp",
+      "/assets/Nesus-3.webp",
+      "/assets/Nesus-4.webp",
+      "/assets/Nesus-5.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "project_name": "Dialin",
+    "project_type": "Health Care App",
+    "project_thumb": "/assets/Dialin.webp",
+    "project_icon": "/assets/dialin-icon.svg",
+    "project_details": "Dialin offers a powerful platform for managing business communications. We created an intuitive design that allows users to make calls, send texts, manage contacts, and access AI-powered features like smart replies and call transcripts.",
+    "project_images": [
+      "/assets/Dialin-1.webp",
+      "/assets/Dialin-2.webp",
+      "/assets/Dialin-3.webp",
+      "/assets/Dialin-4.webp",
+      "/assets/Dialin-5.webp"
+    ]
+  }
+]

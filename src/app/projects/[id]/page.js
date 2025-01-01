@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import projects from "../../../data/projectData.json";
 import Link from "next/link";
+import Image from "next/image";
 export const runtime = "edge";
 
 const Projects = ({ params }) => {
@@ -21,14 +22,21 @@ const Projects = ({ params }) => {
 
   return (
     <div className="container pb-20">
-      <div className="sl:max-w-[402px] max-w-[326px] mx-auto">
+      <div className="sl:max-w-[402px] max-w-[326px] mx-auto mb-8">
         <Link
           href={"/"}
           className="bg-[#F5F5F5] rounded-full text-black  py-2 px-4 inline-block font-inter text-base leading-6 font-medium -tracking-0.4 cursor-pointer my-8"
         >
           <p>Go back</p>
         </Link>
-        <div className="size-[50px] rounded-md bg-gray-200"> </div>
+        <div className="size-[50px] rounded-md overflow-hidden">
+          <Image
+            src={currentProject?.project_icon}
+            width={50}
+            height={50}
+            alt="Picture of the Sajon Islam"
+          />
+        </div>
         <p className="font-inter font-medium text-black text-lg leading-22 -tracking-0.4 mt-8">
           {currentProject.project_name}
         </p>
@@ -37,8 +45,10 @@ const Projects = ({ params }) => {
         </p>
       </div>
       {currentProject.project_images.map((item, idx) => (
-        <div key={idx} className="flex flex-col sl:gap-8 gap-3  mt-8">
-          <div className="w-full h-[280px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]"></div>
+        <div key={idx} className=" relative ">
+          <div className="w-full h-[280px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]">
+            <Image src={item} fill alt="Picture of the Sajon Islam" />
+          </div>
         </div>
       ))}
     </div>
