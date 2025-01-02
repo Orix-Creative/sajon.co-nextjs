@@ -6,6 +6,7 @@ import Link from "next/link";
 import CopyMailButton from "@/components/copyMail";
 import Bookcall from "@/components/bookcall";
 import Video from "@/components/video";
+import { lazy } from "react";
 export const runtime = "edge";
 
 export default function Home() {
@@ -16,7 +17,10 @@ export default function Home() {
         {/* intro */}
 
         <div className="sl:max-w-[402px] max-w-[326px] mx-auto">
-          <p className="font-inter font-medium text-black text-lg leading-22 tracking-[-0.54px]">
+          <p
+           
+            className=" font-inter font-medium text-black text-lg leading-22 tracking-[-0.54px]"
+          >
             Hello I’m Sajon Islam
           </p>
           <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-4">
@@ -28,7 +32,7 @@ export default function Home() {
         {/* year showreel */}
         <div className="mt-8  ">
           {/* <div className="border border-[#2727270D] bg-[#f2f2f2] rounded-2xl w-full h-[258px]"></div> */}
-          <Video/>
+          <Video />
           <p
             className="font-inter font-medium text-xs leading-3 tracking-[-0.36px] text-[#0000004D]
           text-center mt-4 sl:mt-3"
@@ -83,11 +87,17 @@ export default function Home() {
             <Link
               key={project.id}
               href={`/projects/${project.id}`}
-              className="relative project-card flex-shrink-0 min-w-[224px]"
+              className="relative project-card flex-shrink-0 max-w-[224px] w-full"
             >
               {/* project image */}
               <div className="rounded-2xl w-full max-w-[224px] h-[200px] relative flex justify-center items-center flex-shrink-0 overflow-hidden cursor-pointer project-img ">
-                <Image src={project.project_thumb} fill alt="Project Image" />
+                <Image
+                  src={project.project_thumb}
+                  loading="lazy"
+                  fill
+                  alt="Project Image"
+                  className="w-full h-full"
+                />
               </div>
               {/* project title & description */}
               <div className="mt-[14px] py-1">
