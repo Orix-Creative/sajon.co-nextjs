@@ -77,23 +77,24 @@ export default function Home() {
           </p>
         </div>
         {/* project  */}
-        <div className="sl:grid sl:grid-cols-2 flex gap-x-3 gap-y-5  sl:mt-10 mt-8 overflow-x-scroll sl:overflow-x-visible">
+        {/* sl:grid sl:grid-cols-2 flex gap-3 sl:gap-x-3 sl:gap-y-5  sl:mt-10 mt-8 overflow-x-scroll sl:overflow-x-visible   */}
+        <div className="sl:grid sl:grid-cols-2 flex gap-3 sl:gap-x-3 sl:gap-y-4  sl:mt-10 mt-8 overflow-x-scroll sl:overflow-x-visible ">
           {projects?.map((project) => (
             <Link
               key={project.id}
               href={`/projects/${project.id}`}
-              className=" relative project-card  "
+              className="relative project-card flex-shrink-0 min-w-[224px]"
             >
               {/* project image */}
-              <div className="rounded-2xl w-full max-w-[224px] h-[200px] relative flex justify-center items-center flex-shrink-0 overflow-hidden cursor-pointer project-img">
+              <div className="rounded-2xl w-full max-w-[224px] h-[200px] relative flex justify-center items-center flex-shrink-0 overflow-hidden cursor-pointer project-img ">
                 <Image src={project.project_thumb} fill alt="Project Image" />
               </div>
               {/* project title & description */}
-              <div className="mt-[14px]">
+              <div className="mt-[14px] py-1">
                 <p className="font-inter text-lg font-medium leading-3 -tracking-[-0.54px] text-black">
                   {project.project_name}
                 </p>
-                <p className="font-inter text-base   leading-3 -tracking-0.4 text-[#27272780] mt-3">
+                <p className="font-inter text-base   leading-3 -tracking-0.4 text-[#27272780]  mt-2">
                   {project.project_type}
                 </p>
               </div>

@@ -32,15 +32,12 @@
 }
 /* copy mail button */
 .c-done {
-  position: absolute;
   left: 0;
   top: 0;
   white-space: nowrap;
-  color: #ff0000;
 }
 
 .c-def {
-  position: relative;
   white-space: nowrap;
   color: #000000;
 }

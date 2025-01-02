@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sl: "480px",
+        sl: "400px",
       },
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],

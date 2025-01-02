@@ -21,7 +21,7 @@ const Projects = ({ params }) => {
   const currentProject = project[0];
 
   return (
-    <div className="container pb-20">
+    <div className="container pb-8">
       <div className="sl:max-w-[402px] max-w-[326px] mx-auto mb-8">
         <Link
           href={"/"}
@@ -34,7 +34,8 @@ const Projects = ({ params }) => {
             src={currentProject?.project_icon}
             width={50}
             height={50}
-            alt="Picture of the Sajon Islam"
+            loading="lazy"
+            alt={`${currentProject.project_name} icon`}
           />
         </div>
         <p className="font-inter font-medium text-black text-lg leading-22 -tracking-0.4 mt-8">
@@ -46,8 +47,8 @@ const Projects = ({ params }) => {
       </div>
       {currentProject.project_images.map((item, idx) => (
         <div key={idx} className=" relative ">
-          <div className="w-full h-[280px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]">
-            <Image src={item} fill alt="Picture of the Sajon Islam" />
+          <div className="w-full sl:h-[261px] h-[207px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]">
+            <Image src={item} loading="lazy" className="w-full h-full" fill alt={`${currentProject.project_name} preview image`} />
           </div>
         </div>
       ))}
