@@ -7,7 +7,7 @@ import Bookcall from './bookcall';
 const Navbar = () => {
     return (
         <>
-            <div className='p-3 rounded-full bg-[#F4F4F4] flex justify-between items-center mb-9 mt-6'>
+            <div className='p-3 rounded-full bg-[#F4F4F4] flex justify-between items-center mb-9 mt-6 sl:max-w-[420px] max-w-[326px] mx-auto'>
                 <Link href={'https://www.instagram.com/sajon.co'} className='flex gap-3 items-center'>
                     <Image
                         src={sajonImg}

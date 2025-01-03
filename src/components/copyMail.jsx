@@ -3,8 +3,9 @@
 import { useState } from "react";
 
 const CopyMailButton = () => {
-    const email = 'contact@sajon.co'
+    const email = "contact@sajon.co";
     const [copied, setCopied] = useState(false);
+
 
     const handleCopy = async () => {
         try {
@@ -15,11 +16,34 @@ const CopyMailButton = () => {
             console.error("Failed to copy: ", err);
         }
     };
-
     return (
         <>
-            <div onClick={handleCopy} className="bg-[#F5F5F5] rounded-full text-black  py-2 px-4 inline-block font-inter text-base leading-6 font-medium -tracking-0.4 cursor-pointer ">
-                <p>Copy email</p>
+            <div
+                onClick={handleCopy}
+                className={`bg-[#F5F5F5] rounded-full text-black py-2 px-4 inline-block font-inter text-base leading-6 font-medium -tracking-0.4 cursor-pointer 
+        transition-all duration-500 ease-in-out ${copied ? "  shadow-sm" : ""
+                    }`}
+            >
+                <p className="relative">
+                    {copied ? (
+                        <>
+                            <span
+                                className="absolute inset-0 flex items-center justify-center text-sm animate-fade"
+                                style={{ zIndex: 1 }}
+                            >
+                                Copied!
+                            </span>
+                            <span
+                                className="opacity-0"
+                                style={{ visibility: "hidden", height: 0 }}
+                            >
+                                Copy email
+                            </span>
+                        </>
+                    ) : (
+                        "Copy email"
+                    )}
+                </p>
             </div>
 
             {/* <div
@@ -43,7 +67,7 @@ const CopyMailButton = () => {
                 </div>
             </div> */}
 
-          
+
         </>
 
     );

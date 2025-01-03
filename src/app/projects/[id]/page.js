@@ -22,7 +22,7 @@ const Projects = ({ params }) => {
 
   return (
     <>
-      <div className="container pb-8">
+      <div className="container">
         <div className="sl:max-w-[402px] max-w-[326px] mx-auto mb-8">
           <Link
             href={"/"}
@@ -47,7 +47,7 @@ const Projects = ({ params }) => {
           </p>
         </div>
       </div>
-     <div className="max-w-[665px] w-full mx-auto">
+     <div className="max-w-[665px] w-full mx-auto mb-8 px-1">
      {currentProject.project_images.map((item, idx) => (
         <div key={idx} className=" relative ">
           <div className="w-full sl:h-[377px] h-[207px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]">
