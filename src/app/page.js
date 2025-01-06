@@ -12,22 +12,23 @@ export const runtime = "edge";
 export default function Home() {
   return (
     <>
-      <div className="container">
+      <div className="container  ">
         <Navbar />
         {/* intro */}
 
         <div className="sl:max-w-[402px] max-w-[326px] sl:ml-5 mx-auto sl:mx-0">
           <p className=" font-inter font-medium text-black text-lg leading-22 tracking-[-0.54px]">
-            Hello I’m Sajon Islam
+            Meet your trusted design partner Sajon, a design-focused engineer
+            who enjoys designing.
           </p>
           <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-4">
-            I partner with founders and startups to create high-converting,
-            meaningful and purpose driven design for users.
+            A multidisciplinary designer who crafting strong brands for SaaS
+            products, Website, and Apps with a deep understanding of user needs.
           </p>
         </div>
 
         {/* year showreel */}
-        <div className="mt-10  ">
+        <div className="sl:mt-7 mt-5  ">
           {/* <div className="border border-[#2727270D] bg-[#f2f2f2] rounded-2xl w-full h-[258px]"></div> */}
           <Video />
           <p
@@ -38,14 +39,13 @@ export default function Home() {
           </p>
         </div>
         {/*  */}
-        <div className="sl:max-w-[402px] max-w-[326px] sl:ml-5 mx-auto sl:mx-0 mt-10">
+        <div className="sl:max-w-[402px] max-w-[326px] sl:ml-5 mx-auto mt-5">
           <p className="font-inter font-medium text-black text-lg leading-22 tracking-[-0.54px]">
-            I have 15years+ experience{" "}
+          I have 10years+ experience 
           </p>
           <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-4">
-            My goal has never been monetary success, we strive to leave a legacy
-            renowned for long-lasting, remarkable design that not only looks the
-            part, but converts.
+          Your vision deserves a world-class execution.
+I’m your go-to design partner for Startups, Agencies, and Creatives to create high-converting, meaningful and purpose driven design for users.
           </p>
         </div>
         {/* client logo */}
@@ -199,7 +199,7 @@ export default function Home() {
             className="font-inter font-medium text-xs leading-3 tracking-[-0.36px] text-[#0000004D]
           text-center sl:mt-5 mt-4"
           >
-            My clients include
+            Recent Clients
           </p>
         </div>
         {/* project  */}
