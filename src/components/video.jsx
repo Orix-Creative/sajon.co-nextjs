@@ -20,7 +20,7 @@ const Video = () => {
                 ref={videoRef}
                 muted
                 playsInline
-                className={`w-full  h-auto `}
+                className={`w-full  h-full`}
                 style={{ objectFit: 'contain' }}
             >
                 <source src={'https://cdn.prod.website-files.com/675aaa451de0011e537740d8%2F67752af8b700ee94518b5b09_Website%20Reel-transcode.mp4'} type="video/mp4" />

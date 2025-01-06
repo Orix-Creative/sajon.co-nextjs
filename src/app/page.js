@@ -21,14 +21,14 @@ export default function Home() {
             Meet your trusted design partner Sajon, a design-focused engineer
             who enjoys designing.
           </p>
-          <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-4">
+          <p className="font-inter font-medium text-black text-lg leading-[24px] tracking-[-0.54px] mt-5">
             A multidisciplinary designer who crafting strong brands for SaaS
             products, Website, and Apps with a deep understanding of user needs.
           </p>
         </div>
 
         {/* year showreel */}
-        <div className="sl:mt-7 mt-5  ">
+        <div className="sl:mt-9 mt-8 ">
           {/* <div className="border border-[#2727270D] bg-[#f2f2f2] rounded-2xl w-full h-[258px]"></div> */}
           <Video />
           <p
@@ -39,7 +39,7 @@ export default function Home() {
           </p>
         </div>
         {/*  */}
-        <div className="sl:max-w-[402px] max-w-[326px] sl:ml-5 mx-auto mt-5">
+        <div className="sl:max-w-[402px] max-w-[326px] sl:ml-5 mx-auto sl:mt-10 mt-8">
           <p className="font-inter font-medium text-black text-lg leading-22 tracking-[-0.54px]">
           I have 10years+ experience 
           </p>
@@ -49,7 +49,7 @@ I’m your go-to design partner for Startups, Agencies, and Creatives to create 
           </p>
         </div>
         {/* client logo */}
-        <div className="mt-10 sl:max-w-[402px] max-w-[326px] mx-auto">
+        <div className="sl:mt-10 mt-8 sl:max-w-[402px] max-w-[326px] mx-auto">
           <div className="flex gap-10 justify-center items-center">
             <svg
               width="110"
