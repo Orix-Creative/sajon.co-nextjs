@@ -47,21 +47,23 @@ const Projects = ({ params }) => {
           </p>
         </div>
       </div>
-     <div className="max-w-[665px] w-full mx-auto mb-8 px-1">
-     {currentProject.project_images.map((item, idx) => (
-        <div key={idx} className=" relative ">
-          <div className="w-full sl:h-[377px] h-[207px] rounded-[16px] bg-[#f2f2f2] border border-[#2727270D]">
-            <Image
-              src={item}
-              loading="lazy"
-              className="w-full h-full"
-              fill
-              alt={`${currentProject.project_name} preview image`}
-            />
+      <div className="max-w-[665px] w-full mx-auto mb-8 px-1 sl:space-y-4 space-y-3">
+        {currentProject.project_images.map((item, idx) => (
+          <div key={idx} className="relative w-full">
+            <div className="w-full h-auto max-w-full rounded-[16px]">
+              <Image
+                src={item}
+                loading="lazy"
+                className="w-full h-auto object-contain "
+                alt={`${currentProject.project_name} preview image`}
+                width={0}
+                height={0}
+                sizes="(max-width: 665px) 100vw, 50vw"
+              />
+            </div>
           </div>
-        </div>
-      ))}
-     </div>
+        ))}
+      </div>
     </>
   );
 };
