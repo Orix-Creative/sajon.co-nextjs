@@ -1,12 +1,11 @@
 import Navbar from "@/components/navbar";
-import logo from "../../public/assets/whop.png";
 import Image from "next/image";
 import projects from "../data/projectData.json";
 import Link from "next/link";
 import CopyMailButton from "@/components/copyMail";
 import Bookcall from "@/components/bookcall";
 import Video from "@/components/video";
-import { lazy } from "react";
+ 
 export const runtime = "edge";
 
 export default function Home() {
